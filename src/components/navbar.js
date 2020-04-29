@@ -1,14 +1,26 @@
 import React from 'react';
 import { Navbar, Nav, Form, Button, FormControl } from 'react-bootstrap';
+import Popup from "reactjs-popup";
+import Content from './content';
 
 export const NavigationBar = () => (
   <div>
     <Navbar bg="primary" variant="dark">
-      <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-      <Nav className="mr-auto">
+      <Navbar.Brand href="#home">Smith+Nephew</Navbar.Brand>
+      <Nav className="mr-auto"> 
         <Nav.Link href="#home">Home</Nav.Link>
-        <Nav.Link href="#features">Features</Nav.Link>
-        <Nav.Link href="#pricing">Pricing</Nav.Link>
+        <Popup modal trigger={<Nav.Link href="#create">Create a Project/Program</Nav.Link>}>
+        {close => (
+      <div>
+         <a className="close" onClick={close}>
+          &times;
+        </a>
+       <Content/>
+       
+      </div>
+    )}
+        </Popup>
+        <Nav.Link href="#pricing">Project Dashboard</Nav.Link>
       </Nav>
       <Form inline>
         <FormControl type="text" placeholder="Search" className="mr-sm-2" />

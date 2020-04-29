@@ -1,0 +1,17 @@
+.header{
+  width:97%;
+  color:white   ;
+  font-weight: 500;
+  background-color:#fd7300;
+  border-radius: 5px;
+  font-size: large;
+  padding-top:5px;
+  padding-bottom: 5px;
+  padding-left: 3px;
+}
+
+.popup-content
+{
+  
+ border-radius: 5px;
+}
