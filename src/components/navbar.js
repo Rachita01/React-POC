@@ -2,6 +2,7 @@ import React from 'react';
 import { Navbar, Nav, Form, Button, FormControl } from 'react-bootstrap';
 import Popup from "reactjs-popup";
 import Content from './content';
+import {Link} from "react-router-dom";
 
 export const NavigationBar = () => (
   <div>
@@ -20,7 +21,7 @@ export const NavigationBar = () => (
       </div>
     )}
         </Popup>
-        <Nav.Link href="#pricing">Project Dashboard</Nav.Link>
+        <Nav.Link to="/ProjDashboard" href="#dashboard">Project Dashboard</Nav.Link>
       </Nav>
       <Form inline>
         <FormControl type="text" placeholder="Search" className="mr-sm-2" />
