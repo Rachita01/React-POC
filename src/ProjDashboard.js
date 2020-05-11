@@ -1,10 +1,10 @@
 import React from "react";
-
+import Example from './components/usergrid';
 class ProjDashboard extends React.Component
 {
     render(){
     return(
-      <h1>Hello</h1>
+      <Example/>
     );
 }
 }
